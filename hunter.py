@@ -7,7 +7,7 @@ import urllib3
 import time
 import warnings
 
-# সুক্ষ্ম মেসেজ এবং ওয়ার্নিং বন্ধ করা
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
 
