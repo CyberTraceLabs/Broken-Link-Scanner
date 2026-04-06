@@ -24,14 +24,15 @@ Ensure you have Python 3.10+ installed on your machine.
    git clone [https://github.com/CyberTraceLabs/Broken-Link-Scanner.git](https://github.com/CyberTraceLabs/Broken-Link-Scanner.git)
    cd Broken-Link-Scanner
 2.Install Dependencies:
-Bash
+ ```bash
 pip install -r requirements.txt
 
-3.Run the Tool:
-Bash
+ 3.Run the Tool:
+   
 python hunter.py
-
-📊 How it Works
+ 
+ 
+# How it Works:
 Phase 1 (Recon): The tool identifies all valid subdomains for the target root domain.
 
 Phase 2 (Crawling): It pulls every recorded URL from the Wayback Machine for each discovered subdomain.
