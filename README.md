@@ -23,3 +23,30 @@ Ensure you have Python 3.10+ installed on your machine.
    ```bash
    git clone [https://github.com/CyberTraceLabs/Broken-Link-Scanner.git](https://github.com/CyberTraceLabs/Broken-Link-Scanner.git)
    cd Broken-Link-Scanner
+2.Install Dependencies:
+Bash
+pip install -r requirements.txt
+
+3.Run the Tool:
+Bash
+python hunter.py
+
+📊 How it Works
+Phase 1 (Recon): The tool identifies all valid subdomains for the target root domain.
+
+Phase 2 (Crawling): It pulls every recorded URL from the Wayback Machine for each discovered subdomain.
+
+Phase 3 (Hunting): It scans all external links in those pages to find 404 Not Found or DEAD connection errors.
+
+Phase 4 (Reporting): Outputs a final scan report ready for manual verification.
+
+⚠️ Disclaimer
+This tool is for educational purposes and authorized security testing only. Cyber Trace Labs is not responsible for any misuse or damage caused by this program.
+
+🤝 Contact
+Maintainer: Cyber Trace Labs
+
+Email: cybertracelabs@gmail.com
+
+
+---
